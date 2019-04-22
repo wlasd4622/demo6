@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <%
+    var navMap={
+      'index':{
+        index:0,
+        name:'首页-成长兔英语'
+      },
+      'course_introductory':{
+        index:1,
+        name:'课程介绍'
+      },//入门课
+      'course_0_3':{
+        index:1,
+        name:'课程介绍'
+      },
+      'course_3_6':{
+        index:1,
+        name:'课程介绍'
+      },
+      'select_pen':{
+        index:2,
+        name:'点读专区'
+      },//点读笔
+      'select_course':{
+        index:2,
+        name:'点读专区'
+      },
+      'about_us':{
+        index:3,
+        name:'关于我们-成长兔英语'
+      },//关于我们
+      'development_history':{
+        index:3,
+        name:'发展历程-成长兔英语'
+      },//发展史
+      'company_introduction':{
+        index:3,
+        name:'公司介绍-成长兔英语'
+      },//公司介绍
+      'news_list':{
+        index:3,
+        name:'媒体报道-成长兔英语'
+      },//新闻列表
+      'news_detail':{
+        index:3,
+        name:'媒体报道-成长兔英语'
+      },//新闻详情
+      'contact_us':{
+        index:3,
+        name:'联系我们-成长兔英语'
+      }//联系我们
+    }
+    var activeIndex=(navMap[pageName]&&navMap[pageName].index)?navMap[pageName].index:0;
+  %>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="keywords" content="成长兔英语,英语,儿童教育,早教">
+  <meta name="description" content="成长兔英语" />
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <%if(navMap[pageName]&&navMap[pageName].name){%>
+    <title><%=(navMap[pageName].name)%></title>
+  <%}else{%>
+    <title>成长兔英语</title>
+  <%}%>
+  <script>
+    function IsPC() {
+      var userAgentInfo = navigator.userAgent;
+      var Agents = ["Android", "iPhone",
+        "SymbianOS", "Windows Phone",
+        "iPad", "iPod"
+      ];
+      var flag = true;
+      for (var v = 0; v < Agents.length; v++) {
+        if (userAgentInfo.indexOf(Agents[v]) > 0) {
+          flag = false;
+          break;
+        }
+      }
+      return flag;
+    }
+    if (IsPC()) {
+      location.href = "/index.html";
+    }
+
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-M3LSSPT');
+
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3LSSPT" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="header" id="header">
+    <div class="logo">
+      <a href="/m/index.html"> <img src="~mimages/logo.png" alt=""></a>
+    </div>
+    <div class="menu">
+      <p onclick="showMenu()"><span class="page_name"></span><img src="~mimages/menu.png" alt=""></p>
+      <div class="menu-list">
+        <div class="mask" onclick="closeMenu()"></div>
+        <div class="warp">
+          <ul>
+            <li><a href="/m/company_introduction.html" data-name="company_introduction">公司介绍</a></li>
+            <li><a href="/m/development_history.html" data-name="development_history">发展历程</a></li>
+            <!-- <a href="">
+                  <li>媒体报道</li>
+                </a> -->
+            <li><a href="/m/contact_us.html" data-name="contact_us">联系我们</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>

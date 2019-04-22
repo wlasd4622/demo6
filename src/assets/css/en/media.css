@@ -1,0 +1,28 @@
+@media (min-width: 320px) {
+    .fivezeo .col-sm-2 {width: 100%;}
+    .teamtxt {padding: 0 15px;}
+    .change p {margin-left: 0;}
+}
+@media (min-width: 690px) {
+    .fivezeo .col-sm-2 {width: 100%;}
+}
+@media (min-width: 768px) {
+    .logo {width:64px; overflow: hidden}
+    .fivezeo .col-sm-2 {width: 20%;}
+}
+@media (min-width: 992px) {
+    .change p {margin-left: 40px;}
+    .logo {width:64px; overflow: hidden}
+    .change{padding-top: 2px;}
+    .jindu { width: 260px;}
+}
+@media (min-width: 1080px) {
+    .jindu { width: 300px;}
+    .teamtxt {padding: 0 120px;}
+}
+@media (min-width: 1200px){
+    .logo {width:210px;}
+    .change{padding-top: 2px;}
+    .fivezeo .col-sm-2 {width: 20%;}
+    .jindu { width: 340px;}
+}
