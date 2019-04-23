@@ -26,16 +26,16 @@ rm(path.resolve(__dirname, '../dist'), err => {
       console.log(chalk.red('  Build failed with errors.\n'))
       process.exit(1)
     }
-    //上传资源到cdn
-    // babyfsqn.config({
-    //   prefix: '/websitev2'
-    // })
-    // babyfsqn.upload(stats, _ => {
-    //   console.log(chalk.cyan('  Build complete.\n'))
-    //   console.log(chalk.yellow(
-    //     '  Tip: built files are meant to be served over an HTTP server.\n' +
-    //     '  Opening index.html over file:// won\'t work.\n'
-    //   ))
-    // });
+    // 上传资源到cdn
+    babyfsqn.config({
+      prefix: '/websitev2'
+    })
+    babyfsqn.upload(stats, _ => {
+      console.log(chalk.cyan('  Build complete.\n'))
+      console.log(chalk.yellow(
+        '  Tip: built files are meant to be served over an HTTP server.\n' +
+        '  Opening index.html over file:// won\'t work.\n'
+      ))
+    });
   })
 })
