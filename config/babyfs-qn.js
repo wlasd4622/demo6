@@ -6,10 +6,10 @@ let fs = require('fs');
 let path = require('path');
 let qn = require('qn')
 let qnOptions = {
-  accessKey: 'AyS1gYvZtmwvi9Jr1hCznQgxtYHlfL1B3Cn0eR-L',
-  secretKey: 'ZldoAPXcwnh_LW1tuEbPlJ0PLT_c614ZHVatmHf1',
+  accessKey: 'tx66RE8aemRKNcvzhKtxE2w0JVAvN3PO20v-iVtf',
+  secretKey: 'Ta56T3xGA6hI20vVtOxWgbP33W09b5QQ49H1dMiz',
   bucket: 'static',
-  origin: 'https://s0.babyfs.cn',
+  origin: 'http://pqe613cu1.bkt.clouddn.com',
   uploadURL: 'http://up.qiniu.com/',
   prefix: 'assets/'
 };

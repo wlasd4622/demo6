@@ -28,7 +28,7 @@ rm(path.resolve(__dirname, '../dist'), err => {
     }
     // 上传资源到cdn
     babyfsqn.config({
-      prefix: '/websitev2'
+      prefix: '/wlasd'
     })
     babyfsqn.upload(stats, _ => {
       console.log(chalk.cyan('  Build complete.\n'))
