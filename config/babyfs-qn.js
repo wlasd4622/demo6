@@ -8,8 +8,8 @@ let qn = require('qn')
 let qnOptions = {
   accessKey: 'tx66RE8aemRKNcvzhKtxE2w0JVAvN3PO20v-iVtf',
   secretKey: 'Ta56T3xGA6hI20vVtOxWgbP33W09b5QQ49H1dMiz',
-  bucket: 'static',
-  origin: 'http://pqe613cu1.bkt.clouddn.com',
+  bucket: 'static1',
+  origin: 'http://ptja20a7f.bkt.clouddn.com',
   uploadURL: 'http://up.qiniu.com/',
   prefix: 'assets/'
 };
